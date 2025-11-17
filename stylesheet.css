@@ -587,6 +587,12 @@ line-height: normal;
 #page1:hover .caption{
      transform: translateX(0%);
 }
+#page2:hover .caption{
+     transform: translateX(0%);
+}
+#page3:hover .caption{
+     transform: translateX(0%);
+}
  #page1:hover #girl{
      transform: translateX(-3%);
 }
@@ -619,3 +625,114 @@ font-weight: 600;
 line-height: normal;
 }
 
+#page2 , #page3{
+    position: relative;
+    background-color: #314558;
+    
+    
+}
+
+.sand2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(105%);
+    transition: all 600ms ease;
+}
+.moon{
+    position: absolute;
+    top: 0;
+    left: 11px;
+    opacity: 0;
+    transform: translateY(221%);
+    transition: all 600ms ease 300ms;
+}
+.girl2{
+    position: absolute;
+    top: 138px;
+    right: 235px;
+     transform: translateX(191%);
+    transition: all 2s ease 500ms;
+}
+
+.fly{
+     position: absolute;
+    top: 0;
+    left: 450px;
+    transform: translateY(0%); /* start below screen/section */
+    opacity: 0;  
+}
+.secondscene , .thirdscene{
+    overflow: hidden;
+    height: 683px;
+    width: 1280px;
+    position: relative;
+}
+
+.blurhouse{
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    transform: translateX(100%);
+    transition: all 400ms ease 1s;
+}
+
+#page2:hover .blurhouse{
+    transform: translateX(0px);
+}
+#page2:hover .sand2{
+    transform: translateY(20%);
+}
+
+#page2:hover .moon{
+    transform: translateY(10%);
+    opacity: 1;
+}
+#page3:hover .moon{
+    transform: translateY(10%);
+    opacity: 1;
+}
+#page2:hover .girl2{
+     transform: translateX(-30%);
+}
+#page2:hover .fly{
+    animation: fly 700ms ease 2s forwards;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0) rotateZ(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(50%) rotateZ(30deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%) rotateZ(30deg);
+        opacity: 1;
+    }
+}
+
+.sand3{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    transform: translateY(114px);
+    transition: all 400ms ease;
+}
+
+.girl3{
+    position: absolute;
+    top: 135px;
+    left: 339px;
+    transform: translateX(153%);
+    transition: all 1s ease 200ms;
+}
+
+#page3:hover .sand3{
+    transform: translateY(0);
+}
+
+#page3:hover .girl3{
+    transform: translateX(0%);
+}
