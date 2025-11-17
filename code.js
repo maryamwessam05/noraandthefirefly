@@ -6,7 +6,7 @@ document.getElementById("section1").innerHTML +=`
       <h1 id="herotitle">Discover Stories from
             Around the World</h1>
                 <img id="heroimg" class="heroimg" src="img/heroimg.png" alt="">
-                <button id="explore" class="explore">Explore Stories</button>
+               <button onclick="location.href='#section3'" id="explore" class="explore">Explore Stories</button>
                 <img class="paper" src="img/paper.svg" alt="">
 
 
@@ -28,7 +28,7 @@ document.getElementById("section2").innerHTML +=`
 `
 
 document.getElementById("section3").innerHTML +=`
-       <h1>
+       <h1 id="storiessec">
                 Featured Stories
             </h1>
             <div id="stories" class="stories">
@@ -151,4 +151,18 @@ let earth = document.getElementById("earth");
 
 
         }
+
+let section3 = document.getElementById("section3");
+let storiessec = document.getElementById("storiessec");
+let storiesgrid = document.getElementById("stories");
+
+        section3.onmouseenter = function () {
+
+            storiessec.style.opacity = "1";
+            storiessec.style.transform = "translateY(0)";
+            storiesgrid.style.opacity = "1";
+            storiesgrid.style.transform = "translateY(0)";
+
+        }
+
 
