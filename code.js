@@ -26,6 +26,16 @@ document.getElementById("section2").innerHTML +=`
             </div>
             <img class="paper" src="img/paper.svg" alt="">
 `
+
+document.getElementById("section3").innerHTML +=`
+       <h1>
+                Featured Stories
+            </h1>
+            <div id="stories" class="stories">
+                
+            </div>
+            <img class="paper" src="img/paper.svg" alt="">
+`
 let cards = [
     {
         icon : "img/i.svg",
@@ -55,6 +65,62 @@ for ( i = 0; i < cards.length; i++){
     `
 
 }
+
+let stories = [
+    {
+        img : "img/1.png",
+        title : "Noura & the firefly",
+        author: "Ahmed Sherif",
+        flag: "img/twemoji_flag-egypt.svg",
+        desc: "Join Noura as a tiny glowing firefly guides her safely across the magical desert to her village.",
+        lang : "EN / AR"
+    },
+    {
+        img : "img/2.png",
+        title : "The white bird",
+        author: "Edward Cole",
+        flag: "img/twemoji_flag-greece.svg",
+        desc: "Ancient Celtic magic flows through sacred stones, where a young druid must prove worthy of the old ways.",
+        lang : "EN / FR"
+
+    },
+    {
+        img : "img/3.png",
+        title : "The Magical Guitar",
+        author: "Emilly Dunne",
+        flag: "img/twemoji_flag-india.svg",
+        desc: "A beautiful spirit fox tests the kindness of a young farmer, teaching lessons about compassion.",
+        lang : "FR/ AR"
+    }
+]
+
+for ( i = 0; i < stories.length; i++){
+    document.getElementById("stories").innerHTML +=
+    `
+   <div class="story">
+                   <img src=${stories[i].img} alt="">
+                    <div class="row1">
+                        <div class="name">
+                            <h4>${stories[i].title}</h4>
+                            <h6>${stories[i].author}</h6>
+                        </div>
+
+                        <div class="langflag">
+                            <img src=${stories[i].flag} alt="">
+                            <div class="langtyp">
+                               ${stories[i].lang}
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <p>${stories[i].desc}</p>
+                    <button class="read">Read Now</button>
+    </div>
+    `
+
+}
+
 
 let section1 = document.getElementById("section1");
 let herotitle = document.getElementById("herotitle");
