@@ -36,6 +36,54 @@ document.getElementById("section3").innerHTML +=`
             </div>
             <img class="paper" src="img/paper.svg" alt="">
 `
+
+document.getElementById("footer").innerHTML +=
+`
+ <div class="footcontent">
+      <div class="footcol">
+          <h5>MYTHS FROM THE GLOBE</h5>
+          <p>Your ultimate destination for the best deals and discounts in Egypt.</p>
+          <img src="img/footicons.svg" alt="">
+      </div>
+      <div class="footcol">
+          <h5>Quick Links</h5>
+          <div class="links">
+          <a href="">About Us</a>
+          <a href="">Categories</a>
+          <a href="">Hot Deals</a>
+          <a href="">Coupons</a>
+          </div>
+      </div>
+       <div class="footcol">
+          <h5>Support</h5>
+          <div class="links">
+          <a href="">Help Center</a>
+          <a href="">Contact Us</a>
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+          </div>
+      </div>
+
+       <div class="footcol">
+          <h5>Contact Info</h5>
+          <div class="icontxt">
+              <img src="img/locfoot.svg" alt="">
+              <p>Nasr City, Cairo, Egypt</p>
+          </div>
+           <div class="icontxt">
+              <img src="img/call.svg" alt="">
+              <p>+20 2 2345 6789</p>
+          </div>
+           <div class="icontxt">
+              <img src="img/mai.svg" alt="">
+              <p>info@wafarly.org.eg</p>
+          </div>
+      </div>
+  </div>
+  <span>© 2024 EgyptDeals. All rights reserved. Made with Love in Egypt</span>
+
+
+`;
 let cards = [
     {
         icon : "img/i.svg",
@@ -166,3 +214,16 @@ let storiesgrid = document.getElementById("stories");
         }
 
 
+        const audioPlayer = document.getElementById('myAudio');
+        const musicController = document.getElementById('musicController');
+        const musicStatusSpan = document.getElementById('musicStatus');
+    
+        musicController.addEventListener('click', function() {
+           
+            audioPlayer.muted = !audioPlayer.muted;
+            musicStatusSpan.textContent = audioPlayer.muted ? 'OFF' : 'ON';
+            
+          
+        });
+    
+        audioPlayer.play();

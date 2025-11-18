@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio loop autoplay loop  id="myAudio" src="Purity - Beautiful Piano Song, Relaxing BGM BigRicePiano.mp3"></audio>
     <header id="navbar">
         <img src="img/Frame 1.svg" alt="">
         <nav>
@@ -34,8 +35,8 @@
                 <div class="language">AR</div>
                 <div class="language">FR</div>
             </div>
-            <div class="music">
-                <span>ON</span>
+            <div class="music" id="musicController">
+                <span id="musicStatus">OFF</span>
                 <div class="icon"><img src="img/music.svg" alt=""></div>
             </div>
         </div>
@@ -100,8 +101,21 @@
         <img class="paper" src="img/paper.svg" alt="">
 
         </section>
+
+        <div id="page4">
+            <div class="fourthscene">
+                <img class="sand4" src="img/sand4.png" alt="">
+                <img class="girl4" src="img/girl4.png" alt="">
+                <img class="moon" src="img/moon.png" alt="">
+                <img src="img/house4.png" alt="" class="house4">
+                <div class="caption">
+                    <p>It danced in front of her, lighting a path between the dunes.</p>
+                  </div>
+            </div>
+            <img class="paper" src="img/paper.svg" alt="">
+        </div>
     </main>
-    <footer></footer>
+    <footer id="footer"></footer>
     
     <script src="code.js"></script>
 </body>
